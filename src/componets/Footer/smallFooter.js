@@ -14,12 +14,12 @@ export default function SmallFooter(){
                         <div className="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 items-center">
                             <div className="lg:col-span-2 md:text-start text-center">
                                 <Link href="/#" className="text-[22px] focus:outline-none">
-                                    <Image src="/images/logo-light.png" width={138} height={24} className="mx-auto md:me-auto md:ms-0" alt="" />
+                                    <Image src="/images/tkach-logo-white.svg" width={138} height={24} className="mx-auto md:me-auto md:ms-0" alt="" />
                                 </Link>
                             </div>
 
                             <div className="lg:col-span-6 text-center mt-6 md:mt-0">
-                                <p className="mb-0">© {new Date().getFullYear()} Techwind. Design & Develop with <i className="mdi mdi-heart text-red-600"></i> by <Link href="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+                                <p className="mb-0">© {new Date().getFullYear()} developed by  <Link href="https://zaitsau.pro/" target="_blank" className="text-reset">Nick Zaitsau</Link></p>
                             </div>
 
                             <ul className="lg:col-span-4 list-none space-x-1 md:text-end text-center mt-6 md:mt-0">

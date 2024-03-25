@@ -3,14 +3,14 @@ import Link from "next/link"
 import Image from "next/image"
 
 import Navbar from '@/componets/Navbar/navbar'
-import Footer from '@/componets/Footer/footer'
+import Footer from '@/componets/Footer/smallFooter'
 import Switcher from '@/componets/switcher'
 import Blog from '@/componets/blog'
 import Counter from '@/componets/charity/counter'
 import Cta from '@/componets/charity/cta'
 
 import * as Icon from 'react-feather';
-import { BiDollarCircle } from '@/assets/icons/icons'
+import { PiTruckDuotone } from "react-icons/pi";
 import { ourCausesData, teamData } from '@/Data/data'
 
 export default function Home(){
@@ -24,11 +24,11 @@ export default function Home(){
                 <div className="grid md:grid-cols-12 grid-cols-1 mt-10 gap-[30px]">
                     <div className="lg:col-span-7 md:col-span-6">
                         <div className="md:me-6">
-                            <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-white">Your Donation Can <br /> Change the World</h4>
-                            <p className="text-white/75 text-lg max-w-xl">Start working with Techwind that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                            <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-white">TIR TKACH <br /> Грузовой автосервис </h4>
+                            <p className="text-white/75 text-lg max-w-xl">Полный спектр ремонтных работ для грузовых автомобилей в Одессе. Работаем со всеми марками и модификациями.</p>
 
                             <div className="mt-6">
-                                <Link href="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Donate Now</Link>
+                                <Link href="#" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Услуги СТО</Link>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default function Home(){
                     <div className="lg:col-span-5 md:col-span-6">
                         <div className="p-6 rounded-lg border-t-8 border-indigo-600 bg-white dark:bg-slate-900 shadow-lg dark:shadow-gray-800">
                             <div className="mb-6 text-center">
-                                <h4 className="font-bold lg:leading-normal leading-normal text-3xl mb-3">Make a Donation</h4>
+                                <h4 className="font-bold lg:leading-normal leading-normal text-3xl mb-3">Предварительная запись</h4>
                                 <p className="text-slate-400">Your $40.00 monthly donation can give 12 people clean water every year. 100% funds water projects.</p>
                             </div>
 
@@ -45,19 +45,19 @@ export default function Home(){
                                     <div>
                                         <div className="grid md:grid-cols-2 gap-5">
                                             <div className="mb-5">
-                                                <label className="form-label font-medium">Your Name : <span className="text-red-600">*</span></label>
-                                                <input type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Name" name="name" required="" />
+                                                <label className="form-label font-medium">Ваше Имя: <span className="text-red-600">*</span></label>
+                                                <input type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Имя" name="name" required />
                                             </div>
 
                                             <div className="mb-5">
-                                                <label className="form-label font-medium">Your Email : <span className="text-red-600">*</span></label>
-                                                <input type="email" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Email" name="email" required="" />
+                                                <label className="form-label font-medium">Телефон: <span className="text-red-600">*</span></label>
+                                                <input type="text" className="form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Телефон" name="phone" required />
                                             </div>
                                         </div>
                                     </div>
 
                                     <div className="mb-5">
-                                        <label className="form-label font-medium">I Want to Donate for</label>
+                                        <label className="form-label font-medium">Хочу записаться на</label>
                                         <select className="form-select form-input mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0">
                                             <option value="Donate For Food">Donate For Food</option>
                                             <option value="Food For Orphan">Food For Orphan</option>
@@ -69,19 +69,14 @@ export default function Home(){
                                     </div>
 
                                     <div className="mb-5">
-                                        <label className="form-label font-medium">How much do you want to donate ?</label>
+                                        <label className="form-label font-medium">Марка автомобиля</label>
                                         <div className="relative mt-2">
-                                            <span className="absolute top-0.5 start-0.5 w-9 h-9 text-xl bg-gray-100 dark:bg-slate-800 inline-flex justify-center items-center text-dark dark:text-white rounded" id="basic-addon1"><BiDollarCircle className="w-5 h-5"/></span>
-                                            <input type="number" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" min="1" max="1000" placeholder="Enter Amount" id="amount" aria-describedby="inputGroupPrepend" required />
+                                            <span className="absolute top-0.5 start-0.5 w-9 h-9 text-xl bg-gray-100 dark:bg-slate-800 inline-flex justify-center items-center text-dark dark:text-white rounded" id="basic-addon1"><PiTruckDuotone className="w-5 h-5"/></span>
+                                            <input type="text" className="form-input ps-12 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-200 focus:border-indigo-600 dark:border-gray-800 dark:focus:border-indigo-600 focus:ring-0" placeholder="Марка \ Модификация" id="auto" aria-describedby="inputGroupPrepend" />
                                         </div>
                                     </div>
 
-                                    <div className="mb-5">
-                                        <div className="flex items-center w-full mb-0">
-                                            <input className="form-checkbox rounded border-gray-200 dark:border-gray-800 text-indigo-600 focus:border-indigo-300 focus:ring focus:ring-offset-0 focus:ring-indigo-200 focus:ring-opacity-50 me-2" type="checkbox" value="" id="AcceptT&C" />
-                                            <label className="form-check-label text-slate-400" htmlFor="AcceptT&C">I Accept <Link href="#" className="text-indigo-600">Terms And Condition</Link></label>
-                                        </div>
-                                    </div>
+
 
                                     <div className="mb-5">
                                         <input type="submit" className="py-2 px-5 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md w-full" value="Donate Now" />
@@ -94,11 +89,6 @@ export default function Home(){
             </div>
         </section>
 
-        <section className="relative bg-indigo-600 py-12">
-            <div className="container relative">
-                <Counter/>
-            </div>
-        </section>
 
         <section className="relative md:py-24 py-16">
             <div className="container relative">
