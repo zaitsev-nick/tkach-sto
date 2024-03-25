@@ -5,7 +5,6 @@ import Image from "next/image"
 import Navbar from '@/componets/Navbar/navbar'
 import Footer from '@/componets/Footer/footer'
 import Switcher from '@/componets/switcher'
-import CookieModal from '@/componets/cookieModal'
 import Blog from '@/componets/blog'
 import Counter from '@/componets/charity/counter'
 import Cta from '@/componets/charity/cta'
@@ -19,10 +18,10 @@ export default function Home(){
         <>
         <Navbar navClass="nav-light"/>
 
-        <section className="relative lg:py-44 py-36 bg-center bg-cover" style={{backgroundImage:"url('/images/charity/bg.jpg')"}}>
+        <section className="relative lg:py-44 py-36 bg-center bg-cover" style={{backgroundImage:"url('/images/bg2.jpg')"}}>
             <div className="absolute inset-0 bg-slate-900/50"></div>
             <div className="container relative z-1">
-                <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
+                <div className="grid md:grid-cols-12 grid-cols-1 mt-10 gap-[30px]">
                     <div className="lg:col-span-7 md:col-span-6">
                         <div className="md:me-6">
                             <h4 className="font-bold lg:leading-normal leading-normal text-4xl lg:text-5xl mb-5 text-white">Your Donation Can <br /> Change the World</h4>
@@ -215,7 +214,6 @@ export default function Home(){
         </section>
         <Footer/>
         <Switcher/>
-        <CookieModal/>
         </>
     )
 }
