@@ -14,7 +14,7 @@ export default function PageError() {
                     <div className="grid grid-cols-1">
                         <div className="flex flex-col min-h-screen justify-center md:px-10 py-10 px-4">
                             <div className="text-center">
-                                <Link href="/"><Image src="/images/logo-icon-64.png" height={64} width={72} className="mx-auto" alt="" /></Link>
+                                <Link href="/"><Image src="/images/tkach-logo-dark.svg" width={138} height={24}  className="mx-auto" alt="" /></Link>
                             </div>
                             <div className="title-heading text-center my-auto">
                                 <Image src="/images/error.png" height={200} width={200} className="mx-auto" alt="" />
